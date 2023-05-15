@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Work+Sans:wght@100;300;400;500;600;700&display=swap');
+
+/*reseteo de valores- reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+}
+
+.header {
+    height: 100vh;
+}
+
+.contenedorNav {
+    display: flex;
+    justify-content: space-between;
+    /*flex-wrap: wrap;*/
+    background-color: rgb(69, 69, 69);
+    padding: 1.2rem 5rem;
+    height: 12%;
+}
+
+.contenedorLogo {
+    width: 25%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contenedorLogo img {
+    width: 100px;
+    object-fit: cover;
+}
+
+.contenedorLogo h2 {
+    color: white;
+}
+
+.navegacion ul {
+    height: 100%;
+    /*la navegacion es el padre*/
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.linkNav {
+    text-decoration: none;
+    padding-left: 1.3rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+
+}
+
+.contenedorConferencia {
+    background: linear-gradient(to right, #0000009c, #0000009c), url("../assets/img/ba1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 88%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.hijoConferencia {
+    padding-right: 5rem;
+
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hijoConferencia h1 {
+    color: white;
+    text-align: right;
+
+}
+
+.textoConferencia {
+    font-size: 25px;
+    font-size: 2rem;
+    /*32px*/
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-weight: 500;
+    /*negrita*/
+    color: white;
+    text-align: right;
+}
+
+.padreCards {
+    margin-top: 50px;
+    text-align: left;
+    width: 80%;
+    height: 90vh;
+    margin: 0 auto;
+}
+
+.card {
+    display: inline-block;
+    background-color: white;
+    width: 30%;
+    height: 95%;
+    border: 1px solid rgb(180, 180, 180);
+    border-radius: 5px;
+}
+
+.card img {
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+
+}
+
+.sectionOradores {
+    text-align: center;
+}
+
+
+#lugarFecha {
+    height: 68vh;
+    width: 100%;
+    font-size: 1.2rem;
+    color: rgb(180, 180, 180);
+    display: flex;
+    flex-direction: row;
+}
+
+.honolulu {
+    background-color: rgb(16, 6, 13);
+    color: white;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    border-color: black;
+    padding: 5px;
+
+}
+
+.buenosAires {
+    background-color: rgb(69, 83, 106);
+    color: white;
+    height: 100%;
+    width: 50%;
+    display: col;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.conoce a {
+    display: inline-block;
+    width: 150px;
+    padding: 8px;
+    color:  rgb(255, 255, 255);
+    border: 2px solid #fff;
+    text-align: center;
+    outline: none;
+    text-decoration: none;
+    background-color: rgb(69, 83, 106);
+}
+
+.contenedorFormulario {
+    background-color: rgb(255, 255, 255);
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conviertete {
+    color: rgb(32, 22, 22);
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+    padding: 10px;
+}
+
+.orador {
+    color: rgb(32, 22, 22);
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    padding: 10px;
+}
+
+.formulario {
+    background-color: rgb(255, 255, 255);
+    width: 50%;
+    height: 100%;
+    display: col;
+    text-align: center;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid rgb(180, 180, 180);
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.casilleros {
+    display: col;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: space-between;
+    padding: 10px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    width: 100%;
+    box-sizing: 50px 50px 50px 50px;
+
+}
+
+.celdas {
+    display: col;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: space-between;
+    padding: 10px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    width: 100%;
+    margin: 0 auto;
+    height: 50%;
+
+}
+
+.placeholder {
+    color: rgb(180, 180, 180);
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.2rem;
+    width: 49%;
+    height: 50%;
+}
+
+#textArea {
+    color: rgb(180, 180, 180);
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.2rem;
+    width: 100%;
+}
+
+#textArea2 {
+    color: rgb(255, 255, 255);
+    background-color: rgb(47, 187, 47);
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.2rem;
+    width: 100%;
+    border-color: #fff;
+}
+
+.contenedorFooter {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(85, 38, 161);
+    height: 12%;
+    color: white;
+    padding: 1.2rem 5rem;
+    width: 100%;
+}
+
+.contenedorFooter a {
+    text-decoration: none;
+    color: white;
+}
+
+.cardBody {
+    margin: 15px;
+}
+
+.icon {
+    color: rgb(237, 29, 157);
+    font-size: 5rem;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+
+}
+
+@media screen and (max-width: 767px) {
+    .contenedorNav {
+        background-color: rgb(50, 157, 245);
+        flex-direction: column;
+        height: initial;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navegacion .listaNav {
+        flex-direction: column;
+    }
+
+}
+
+/*tablet*/
+@media screen and (min-width:768px) and (max-width:1023px) {
+
+    /*se cargaron los estilos dentro de las llaves*/
+    .contenedorNav {
+        background-color: rgb(245, 213, 50);
+        flex-direction: column;
+        height: initial;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+/*notebook*/
+@media screen and (min-width:1024px) and (max-width: 1400px) {
+    .contenedorNav {
+        background-color: rgb(245, 50, 222);
+    }
+
+}
+
+@media screen and (min-width:1401px) {}
